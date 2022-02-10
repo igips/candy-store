@@ -1,0 +1,23 @@
+nav {
+    display: flex;
+    color: #009a87;
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 30px;
+    font-family: 'Lobster', cursive;
+    
+}
+
+.navDiv {
+    flex: 1;
+    
+}
+
+.navDiv h1 {
+    font-size: 2.5em;
+    text-decoration: underline 1px solid;
+}
+
+
+
