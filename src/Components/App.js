@@ -9,6 +9,11 @@ function App() {
     <>
       <Nav></Nav>
       <Home></Home>
+      <footer>
+				<a href="https://github.com/igips" target="_blank" rel="noreferrer">
+					<i className="fab fa-github"></i>
+				</a>
+			</footer>
       
       
     

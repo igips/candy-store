@@ -3,7 +3,7 @@
 }
 
 html {
-	min-height: 100vh;
+	height: 100%;
 	position: relative;
 	box-sizing: border-box;
 }
@@ -25,6 +25,21 @@ body {
 	flex: 1;
 	display: flex;
 	flex-direction: column;
+}
+
+footer {
+    text-align: center;
+	font-size: 25px;
+    margin-bottom: 5px;
+    
+}
+
+footer a {
+    color: black;
+}
+
+footer a:hover {
+    color: #e2086f;
 }
 
 

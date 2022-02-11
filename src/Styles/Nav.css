@@ -5,12 +5,13 @@ nav {
     
 }
 
+
 #navContainer {
     display: flex;
     flex: 1;
     color: #e2086f;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     font-family: 'Lobster', cursive;
     padding-left: 50px;
     padding-right: 50px;
@@ -28,6 +29,7 @@ nav {
 
 #headerDiv h1 {
     font-size: 2.5em;
+    margin-bottom: 0px;
     
 }
 
@@ -88,15 +90,6 @@ i {
     margin-left: -10px; 
 }
 
-@media (max-width: 700px) {
-    nav {
-        padding-top: 10px;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    
-}
 
 @media (max-width: 670px) {
     #navContainer {
@@ -107,6 +100,7 @@ i {
 
     #headerDiv h1 {
         font-size: 2em;
+        
         
     }
 
@@ -133,8 +127,8 @@ i {
 @media (max-width: 500px) {
     
     #navContainer {
-        padding-left: 15px;
-        padding-right: 15px;
+       padding-left: 15px;
+       padding-right: 15px;
     }
 }
 
@@ -153,12 +147,12 @@ i {
 
 @media (max-width: 400px) {
     #headerDiv h1 {
-        font-size: 1em;
+        font-size: 1.3em;
         
     }
 
     .navDiv {
-        font-size: 0.7em;
+        font-size: 1em;
         gap: 15px;
     }
 
@@ -166,7 +160,17 @@ i {
 }
 
 
-@media (max-width: 300px) {
+@media (max-width: 340px) {
+    #headerDiv h1 {
+        font-size: 1em;
+        
+    }
+
+    .navDiv {
+        font-size: 0.8em;
+        gap: 15px;
+    }
+
     
     
 }
