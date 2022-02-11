@@ -72,9 +72,7 @@ i {
     
 }
 
-#cart {
-    width: 30px;
-}
+
 
 .label-warning[href],
 .badge-warning[href] {
@@ -100,20 +98,84 @@ i {
     
 }
 
+@media (max-width: 670px) {
+    #navContainer {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+
+    #headerDiv h1 {
+        font-size: 2em;
+        
+    }
+
+    .navDiv {
+        font-size: 1em;
+    }
+
+    
+}
+
+@media (max-width: 560px) {
+    #headerDiv h1 {
+        font-size: 1.5em;
+        
+    }
+
+    .navDiv {
+        font-size: 0.7em;
+    }
+
+    
+}
+
+@media (max-width: 500px) {
+    
+    #navContainer {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width: 445px) {
+    #headerDiv h1 {
+        font-size: 1.3em;
+        
+    }
+
+    .navDiv {
+        font-size: 1em;
+    }
+
+    
+}
+
+@media (max-width: 400px) {
+    #headerDiv h1 {
+        font-size: 1em;
+        
+    }
+
+    .navDiv {
+        font-size: 0.7em;
+        gap: 15px;
+    }
+
+    
+}
+
 
 @media (max-width: 300px) {
-    nav {
-        padding-left: 2px;
-        padding-right: 2px;
-    }
+    
+    
 }
 
 
 @media (max-width: 280px) {
     
     .navDiv {
-        justify-content: center;
-        gap: 20px;
+        gap: 10px;
     }
 }
 

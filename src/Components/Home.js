@@ -19,18 +19,28 @@ function Home() {
 	return (
 		<main>
 			<div id="mainContainer">
-				<div  id="mainLeft">
+				
+				<div style={styles.container} id="mainRight"></div>
+                <div id="mainLeft">
 					<div id="grid">
-                        <div className="imgDiv"><img src={smallImg1} alt="" />THEATER BOXES</div>
-                        <div className="imgDiv"><img src={smallImg2} alt="" />POP TARTS</div>
-                        <div className="imgDiv"><img src={smallImg4} alt="" />FANTA</div>
-                        <div className="imgDiv"><img src={smallImg3} alt="" />UNDER $1!</div>
-
+						<div className="imgDiv">
+							<img src={smallImg1} alt="" />
+							THEATER BOXES
+						</div>
+						<div className="imgDiv">
+							<img src={smallImg2} alt="" />
+							POP TARTS
+						</div>
+						<div className="imgDiv">
+							<img src={smallImg4} alt="" />
+							FANTA
+						</div>
+						<div className="imgDiv">
+							<img src={smallImg3} alt="" />
+							UNDER $1!
+						</div>
 					</div>
 				</div>
-				<div style={styles.container} id="mainRight">
-                    
-                </div>
 			</div>
 		</main>
 	);
