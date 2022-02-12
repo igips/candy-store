@@ -17,7 +17,7 @@ function Home() {
 					<div id="grid">
 						<div className="imgDiv">
 							<img src={smallImg1} alt="" />
-                            <span>THEATER BOXES</span>
+                            <span>Candy</span>
 						</div>
 						<div className="imgDiv">
 							<img src={smallImg2} alt="" />

@@ -1,0 +1,87 @@
+p{
+    margin: 0px;
+}
+
+ul {
+    padding-left: 20px;
+    margin: 0px;
+    color: #936F88;
+    font-family: 'Akaya Telivigala', cursive;
+    list-style: none;
+}
+
+
+
+/* font-family: 'Akaya Telivigala', cursive;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Zen Kaku Gothic Antique', sans-serif; */
+
+li span {
+    position: relative;
+    left: -15px;
+    cursor: pointer;
+  }
+
+#storeMain {
+    flex: 1;
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+    max-width: 1600px;
+    margin-top: 20px;
+}
+
+#storeNav {
+    flex: 1;
+    max-width: 150px;
+}
+
+#storeProducts {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+}
+
+.catList {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #936F88;
+}
+
+.lastInList {
+    margin-bottom: 10px;
+}
+
+.catHeader {
+    margin-bottom: 5px;
+    font-family: "Lobster", cursive;
+    color: #E2086F;
+}
+
+#productsHeader {
+    display: flex;
+    justify-content: space-between;
+    color: #E2086F;
+}
+
+#productsHeader p {
+    font-size: 2em;
+    font-family: "Lobster", cursive;
+    color: #E2086F;
+
+}
+
+#productsHeader select {
+    margin-left: 10px;
+    width: 100px;
+    font-size: 12px;
+}
+
+#productsHeader span {
+    font-family: "Lobster", cursive;
+}
+
+#selectDiv {
+    display: flex;
+    align-items: center;
+}
