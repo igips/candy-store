@@ -1,8 +1,45 @@
+import { useEffect } from "react";
 import "../Styles/Store.css";
 
 function Store() {
+
+
+    useEffect(() => {
+
+        function navDropFunction() {
+            if(!document.getElementById("storeNav").classList.contains("active")) {
+
+                if(document.getElementById("storeNav").classList.contains("active2")) {
+                    document.getElementById("storeNav").classList.remove("active2");
+                }
+
+                document.getElementById("storeNav").className += " active";
+                  
+
+            } else {
+                document.getElementById("storeNav").classList.remove("active");
+                document.getElementById("storeNav").className += " active2";
+                
+
+            }
+
+        }
+
+        document.getElementById("navButton").addEventListener("click", navDropFunction);
+
+        return (
+            document.getElementById("navButton").removeAttribute("click", navDropFunction)
+        );
+
+    });
+        
+    
+
+
 	return (
-		<div id="storeMain">
+        <main id="storeMainMain">
+            <div id="storeMain">
+            <button id="navButton">Categories</button>
 			<div id="storeNav">
 				<p className="catHeader">
 					<b>Category</b>
@@ -55,6 +92,9 @@ function Store() {
 				</div>
 			</div>
 		</div>
+
+        </main>
+		
 	);
 }
 
