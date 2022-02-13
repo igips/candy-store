@@ -177,6 +177,11 @@ input {
    
 }
 
+li:hover {
+    /* color: #7A566F; */
+    color: #603C55;
+}
+
 @media (max-width: 900px) {
 	#productList {
         grid-template-columns: repeat(3, 1fr);
