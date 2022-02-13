@@ -1,0 +1,39 @@
+p {
+    margin: 0px;
+}
+
+
+.productCardContainer {
+    display: flex;
+    flex-direction: column;
+    /* height: 235px; */
+    padding-top: 10px;
+    align-items: center;
+    color: #444;
+    font-size: 0.8em;
+    /* min-width: 150px; */
+    
+    width: 100%;
+}
+
+.productCardContainer img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.addToCartDiv {
+    margin-top: 3px;
+    width: 90%;
+    text-align: center;
+
+}
+
+.addToCartDiv button {
+    border: none;
+    width: 80%;
+    background-color: #e2086f;
+    border-radius: 1em;
+    color: white;
+    
+}
