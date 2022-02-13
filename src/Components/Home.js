@@ -29,7 +29,7 @@ function Home() {
 						</div>
 						<div className="imgDiv">
 							<img src={smallImg3} alt="" />
-                            <span>UNDER $1!</span>
+                            <span>UNDER £1!</span>
 						</div>
 					</div>
 				</div>
