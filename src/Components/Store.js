@@ -1,5 +1,8 @@
 import { useEffect } from "react";
 import "../Styles/Store.css";
+import ProductCard from "./ProductCard.js";
+import fantaStraw from "../img/fantaStraw.jpg";
+
 
 function Store() {
 	useEffect(() => {
@@ -26,7 +29,7 @@ function Store() {
 	};
 
 	return (
-		<main id="storeMainMain">
+		<div id="storeMainMain">
 			<div id="storeMain">
 				<button id="navButton">Categories</button>
 				<div id="storeNav">
@@ -88,9 +91,19 @@ function Store() {
 							</select>
 						</div>
 					</div>
+                    <div id="productList">
+                        <ProductCard price="£1.70" name="Fanta Strawberry" img={fantaStraw}></ProductCard>
+                        <ProductCard price="£1.70" name="Fanta Strawberry" img={fantaStraw}></ProductCard>
+                        <ProductCard price="£1.70" name="Fanta Strawberry" img={fantaStraw}></ProductCard>
+                        <ProductCard price="£1.70" name="Fanta Strawberry" img={fantaStraw}></ProductCard>
+                        <ProductCard price="£1.70" name="Fanta Strawberry" img={fantaStraw}></ProductCard>
+                        <ProductCard price="£1.70" name="Fanta Strawberry" img={fantaStraw}></ProductCard>
+                        <ProductCard price="£1.70" name="Fanta Strawberry" img={fantaStraw}></ProductCard>
+
+                    </div>
 				</div>
 			</div>
-		</main>
+		</div>
 	);
 }
 
