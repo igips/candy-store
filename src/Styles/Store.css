@@ -20,14 +20,18 @@ li span {
 #storeMainMain {
 	flex: 1;
 	height: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
 #storeMain {	
+    flex: 1;
 	max-width: 1600px;
 	display: flex;
 	padding-left: 50px;
 	padding-right: 50px;
 	margin-top: 20px;
+    justify-content: space-between;
 }
 
 #navButton {

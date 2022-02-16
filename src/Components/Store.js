@@ -5,7 +5,6 @@ import fantaStraw from "../img/fantaStraw.jpg";
 
 
 function Store() {
-
 	useEffect(() => {
 		function navDropFunction() {
 			if (!document.getElementById("storeNav").classList.contains("active")) {
@@ -22,9 +21,7 @@ function Store() {
 
 		document.getElementById("navButton").addEventListener("click", navDropFunction);
 
-		return (
-            document.getElementById("navButton").removeEventListener("click", navDropFunction)
-        ); 
+		
 	});
 
 	const height = {
