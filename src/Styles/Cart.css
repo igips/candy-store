@@ -1,0 +1,85 @@
+#shoppingCart {
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    right: -110%;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 20px;
+    width: 400px;
+    height: 100%;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    font-size: 2.5em;
+    transition: right 1s ease-in-out 0s;
+
+}
+
+#shoppingCart.active {
+    transition: right 1s ease-in-out 0s;
+    right: 0px;
+}
+
+#cartText {
+    font-family: "Lobster", cursive;
+	color: #e2086f;
+}
+
+#buttonDivCart {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 80%;
+    align-items: center;
+}
+
+.cartButtons {
+    display: flex;
+    font-size: 20px;
+    width: 100%;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: #82499A;
+    border-radius: 0.2em;
+    color: white;
+    cursor: pointer;
+    
+}
+
+#checkoutBut {
+    outline: none;
+}
+
+#closeCartBut {
+    background-color: #564146;
+    outline: none;
+}
+
+#closeCartBut:hover {
+    background-color: #3D282D;
+}
+
+#checkoutBut:hover {
+    background-color: #693081;
+}
+
+#total {
+    font-size: 0.5em;
+    color: #444;
+}
+
+#cartItems {
+    min-height: 50px;
+    overflow: auto;
+}
+
+
+@media (max-width: 500px) {
+	#shoppingCart {
+        width: 100%;
+    }
+}

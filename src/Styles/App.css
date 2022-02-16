@@ -49,5 +49,21 @@ footer a:hover {
     color: #e2086f;
 }
 
+#divForCartBackground {
+	position: fixed;
+	top: 0px;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: 0.6;
+	transition: left 1s ease-in-out 0s;
+}
+
+#divForCartBackground.activeBack {
+	transition: left 1s ease-in-out 0s;
+	left: 0px;
+}
+
 
 
