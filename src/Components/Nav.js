@@ -1,6 +1,24 @@
 import "../Styles/Nav.css";
+import { useEffect } from "react";
 
 function Nav() {
+	
+	useEffect(() => {
+		const back = document.getElementById("divForCartBackground");
+		const cart = document.getElementById("shoppingCart");
+		const cartButton = document.getElementById("cart");
+
+		const showCart = () => {
+			back.classList.add("activeBack");
+			cart.classList.add("active");
+		};
+
+		cartButton.addEventListener("click", (e) => {
+			e.preventDefault();
+			showCart();
+		});
+	});
+
 	return (
 		<nav>
 			<div id="navContainer">

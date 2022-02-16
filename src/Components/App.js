@@ -5,9 +5,6 @@ import Store from "./Store.js";
 import ProductPage from "./ProductPage.js";
 import Contact from "./Contact.js";
 import Cart from "./Cart.js";
-
-
-
 import "../Styles/App.css";
 import { useEffect } from "react";
 
@@ -16,6 +13,7 @@ function App() {
   useEffect(() => {
     const back = document.getElementById("divForCartBackground");
     const cart = document.getElementById("shoppingCart");
+    const closeCartBut = document.getElementById("closeCartBut");
 
     const hideCart = () => {
       back.classList.remove("activeBack");
@@ -23,6 +21,8 @@ function App() {
     }
 
     back.addEventListener("click", hideCart);
+    closeCartBut.addEventListener("click", hideCart);
+
   }); 
 
 
@@ -34,7 +34,7 @@ function App() {
       <Nav></Nav>
       <Contact></Contact>
       <Cart></Cart>
-      <div id="divForCartBackground" className="activeBack"></div>
+      <div id="divForCartBackground" className=""></div>
       <footer>
 				<a href="https://github.com/igips" target="_blank" rel="noreferrer">
 					<i className="fab fa-github"></i>

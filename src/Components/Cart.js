@@ -2,7 +2,7 @@ import "../Styles/Cart.css";
 
 function Cart() {
 	return (
-		<div id="shoppingCart" className="active">
+		<div id="shoppingCart" className="">
 			<span id="cartText">Your Cart</span>
             <div id="cartItems"></div>
 			<div id="buttonDivCart">
