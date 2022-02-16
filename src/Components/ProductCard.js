@@ -12,10 +12,7 @@ function ProductCard(props) {
             <p>{props.price}</p>
             <div className="addToCartDiv">
                 <button>ADD TO CART</button>
-
-            </div>
-
-            
+            </div>            
         </div>
 
     );

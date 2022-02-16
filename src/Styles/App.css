@@ -6,11 +6,17 @@ html {
 	box-sizing: border-box;
 }
 
-html, body {
+html {
 	margin:0;
 	padding:0;
 	height:100%;
 }
+
+body {
+	height: 100%;
+}
+
+
 
 *,
 *::before,
@@ -22,10 +28,12 @@ html, body {
 #root {
 	min-height: 100%;
 	position: relative;
+	display: flex;
+	flex-direction: column;
 }
 
 footer {
-	position: absolute;
+	
 	bottom: 0;
 	width: 100%;
     text-align: center;
