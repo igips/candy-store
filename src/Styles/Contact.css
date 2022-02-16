@@ -1,0 +1,30 @@
+#contactMain {
+    flex: 1;
+    display: flex;
+    height: 100%;
+    padding-top: 90px;
+    align-items: center;
+    flex-direction: column;
+    color: #444;
+    gap: 50px;
+    color: #e2086f;
+    
+}
+
+.contactText {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+.contactText span {
+   color: #444;
+   font-size: 1.2em;
+   
+}
+
+
+
