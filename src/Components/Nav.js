@@ -1,8 +1,9 @@
 import "../Styles/Nav.css";
 import { useEffect } from "react";
+import {Link} from "react-router-dom";
 
 function Nav() {
-	
+
 	useEffect(() => {
 		const back = document.getElementById("divForCartBackground");
 		const cart = document.getElementById("shoppingCart");
@@ -23,8 +24,8 @@ function Nav() {
 		<nav>
 			<div id="navContainer">
 				<div id="navDivLeft" className="navDiv">
-					<a href="">Home</a>
-					<a href="">Store</a>
+					<Link to="/" >Home</Link>
+					<Link to="/store" >Store</Link>
 				</div>
 				<div id="headerDiv">
 					<header>
@@ -32,7 +33,7 @@ function Nav() {
 					</header>
 				</div>
 				<div className="navDiv">
-					<a href="">Contact</a>
+					<Link to="/contact">Contact</Link>
 					<a id="cart" href="">
 						<i className="fa-solid fa-cart-shopping"></i>
 						<span className="badge badge-warning" id="lblCartCount">

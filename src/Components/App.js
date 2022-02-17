@@ -9,42 +9,39 @@ import "../Styles/App.css";
 import { useEffect } from "react";
 
 function App() {
+	useEffect(() => {
+		const back = document.getElementById("divForCartBackground");
+		const cart = document.getElementById("shoppingCart");
+		const closeCartBut = document.getElementById("closeCartBut");
 
-  useEffect(() => {
-    const back = document.getElementById("divForCartBackground");
-    const cart = document.getElementById("shoppingCart");
-    const closeCartBut = document.getElementById("closeCartBut");
+		const hideCart = () => {
+			back.classList.remove("activeBack");
+			cart.classList.remove("active");
+		};
 
-    const hideCart = () => {
-      back.classList.remove("activeBack");
-      cart.classList.remove("active");
-    }
+		back.addEventListener("click", hideCart);
+		closeCartBut.addEventListener("click", hideCart);
+	});
 
-    back.addEventListener("click", hideCart);
-    closeCartBut.addEventListener("click", hideCart);
-
-  }); 
-
-
-
-
-
-  return (
-    <>
-      <Nav></Nav>
-      <Contact></Contact>
-      <Cart></Cart>
-      <div id="divForCartBackground" className=""></div>
-      <footer>
+	return (
+    <BrowserRouter>
+			<Nav></Nav>
+		
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/store" element={<Store />} />
+          <Route path="/contact" element={<Contact />} />
+				</Routes>
+			
+			<Cart></Cart>
+			<div id="divForCartBackground" className=""></div>
+			<footer>
 				<a href="https://github.com/igips" target="_blank" rel="noreferrer">
 					<i className="fab fa-github"></i>
 				</a>
 			</footer>
-      
-      
-    
-    </>
-  );
+    </BrowserRouter>
+	);
 }
 
 export default App;

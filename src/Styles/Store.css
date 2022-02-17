@@ -22,6 +22,7 @@ li span {
 	height: 100%;
     display: flex;
     justify-content: space-around;
+    animation: 2s ease 0s 1 normal none running fadeIn;
 }
 
 #storeMain {	

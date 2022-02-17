@@ -8,6 +8,7 @@
     color: #444;
     gap: 50px;
     color: #e2086f;
+    animation: 2s ease 0s 1 normal none running fadeIn;
     
 }
 

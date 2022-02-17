@@ -3,11 +3,12 @@ main {
 	display: flex;
 	justify-content: center;
 	height: 100%;
+	animation: 2s ease 0s 1 normal none running fadeIn;
 }
 
 .carousel .carousel-item {
 	height: 513px;
-    cursor: pointer;
+	cursor: pointer;
 }
 
 .carousel-item img {
@@ -28,6 +29,15 @@ main {
 	gap: 20px;
 }
 
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
 #mainLeft {
 	margin-top: 20px;
 }
@@ -38,7 +48,6 @@ main {
 	margin-top: 20px;
 	justify-items: center;
 	min-height: 400px;
-    
 }
 
 #grid {
@@ -82,13 +91,13 @@ main {
 		margin-top: 15px;
 		flex-direction: column;
 		align-items: center;
-        gap: 0px;
+		gap: 0px;
 	}
 
 	#mainLeft {
 		min-width: 100%;
-        margin-top: 30px;
-        flex: 2;
+		margin-top: 30px;
+		flex: 2;
 	}
 
 	#grid {
@@ -98,16 +107,16 @@ main {
 	#mainRight {
 		width: 100%;
 		min-height: 300px;
-        margin-top: 10px;
+		margin-top: 10px;
 	}
 
-    .carousel .carousel-item {
-        height: 300px;
-    }
-    
-    .carousel-item img {
-        min-height: 300px;
-    }
+	.carousel .carousel-item {
+		height: 300px;
+	}
+
+	.carousel-item img {
+		min-height: 300px;
+	}
 
 	#mainLeft img {
 		max-width: 500px;
