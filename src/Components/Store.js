@@ -1,10 +1,12 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "../Styles/Store.css";
 import ProductCard from "./ProductCard.js";
 import fantaStraw from "../img/fantaStraw.jpg";
 
 
-function Store() {
+function Store(props) {
+
+	
 	useEffect(() => {
 		function navDropFunction() {
 			if (!document.getElementById("storeNav").classList.contains("active")) {
@@ -92,13 +94,12 @@ function Store() {
 						</div>
 					</div>
                     <div id="productList">
-                        <ProductCard price="£1.70" name="Fanta Strawberry" img={fantaStraw}></ProductCard>
-                        <ProductCard price="£1.70" name="Fanta Strawberry" img={fantaStraw}></ProductCard>
-                        <ProductCard price="£1.70" name="Fanta Strawberry" img={fantaStraw}></ProductCard>
-                        <ProductCard price="£1.70" name="Fanta Strawberry" img={fantaStraw}></ProductCard>
-                        <ProductCard price="£1.70" name="Fanta Strawberry" img={fantaStraw}></ProductCard>
-                        <ProductCard price="£1.70" name="Fanta Strawberry" img={fantaStraw}></ProductCard>
-                        <ProductCard price="£1.70" name="Fanta Strawberry" img={fantaStraw}></ProductCard>
+						{props.products.map((item) => {
+							return (
+								<ProductCard item={item} addToCart={props.addToCart} id={item.id} key={item.id} price={item.price} name={item.name} img={item.photo}></ProductCard>
+							);
+						})}
+                       
 
                     </div>
 				</div>
