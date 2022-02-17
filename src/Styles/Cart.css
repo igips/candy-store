@@ -75,7 +75,62 @@
 #cartItems {
     min-height: 50px;
     overflow: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #444;
 }
+
+.cartItem {
+    display: flex;
+}
+
+.cartImgDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+}
+
+.cartImg {
+    width: 100%;
+    height: auto;
+}
+
+.cartItemData {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 0.3em;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantityCart {
+    width: 30px;
+    text-align: center;
+    border: none;
+    padding: 0px;
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #444;
+}
+
+.cartQuanDiv {
+    display: flex;
+}
+
+.cartQuanDiv button {
+    height: 20px;
+    border: 1px solid #444;
+    background-color: white;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
 
 
 @media (max-width: 500px) {
