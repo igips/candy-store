@@ -7,6 +7,7 @@ import Carousel from "./Carousel.js";
 
 function Home() {
 	
+	
 
 	return (
 		<main>
