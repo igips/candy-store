@@ -14,9 +14,9 @@ function Cart(props) {
                                 <span><b>{item.name}</b> </span>
                                 <span> £{item.price}</span>
                                 <div className="cartQuanDiv">
-                                    <button>-</button>
-                                    <input className="quantityCart" min="0" name="quantity" defaultValue="1" type="number" />
-                                     <button  className="add">+</button>
+                                    <button onClick={() => props.sub(item.id)}>-</button>
+                                    <input className="quantityCart" min="0" name="quantity" value={item.quan} type="number" readOnly />
+                                     <button onClick={() => props.add(item.id)}  className="add">+</button>
                                 </div>
                             </div>
 

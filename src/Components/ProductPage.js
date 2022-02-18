@@ -8,6 +8,18 @@ function ProductPage(props) {
     const [loc, setLoc] = useState(useParams());
 
     const [item, setItem] = useState(props.products.filter(item => item.id === loc.id));
+
+    const [quan, setQuan] = useState(1);
+
+    function addQuan() {
+        setQuan(quan + 1);
+    }
+
+    function subQuan() {
+        if(quan > 1) {
+            setQuan(quan - 1);
+        }
+    }
     
 
     return (
@@ -21,11 +33,11 @@ function ProductPage(props) {
                     <h1 id="productPageTitle">{item[0].name.toUpperCase()}</h1>
                     <p id="productPagePrice">£{item[0].price}</p>
                     <div className="number-input">
-                        <button ></button>
-                        <input className="quantity" min="0" name="quantity" defaultValue="1" type="number" />
-                        <button  className="plus"></button>
+                        <button onClick={subQuan}></button>
+                        <input id="" className="quantity" min="0" name="quantity" value={quan} type="number" readOnly/>
+                        <button onClick={addQuan}  className="plus"></button>
                     </div>
-                    <button onClick={() => props.addToCart(item[0])} className="addToCartButtonProductPage">ADD TO CART</button>
+                    <button onClick={() => props.addToCart(item[0], quan)} className="addToCartButtonProductPage">ADD TO CART</button>
                     <article>{item[0].desc}</article>
 
                 </div>
