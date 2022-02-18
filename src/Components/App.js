@@ -17,6 +17,7 @@ import peace from "../img/peace.jpg";
 
 function App() {
 	const [cart, setCart] = useState([]);
+  const [totalItemsInCart, addTotalItemsInCart] = useState();
 
   function addQuan(id) {
     setCart((prevCart) => {
@@ -28,9 +29,10 @@ function App() {
       });
       return newCart;
     });
+    addTotalItemsInCart(totalItemsInCart > 0 ? totalItemsInCart + 1 : 1);
   }
 
-  function subQuan(id) {
+  function subQuan(id, itemQuan) {
     setCart((prevCart) => {
       const newCart = prevCart.map((cartItem) => {
         if(cartItem.id === id) {
@@ -40,6 +42,14 @@ function App() {
       });
       return newCart;
     });
+
+    addTotalItemsInCart(totalItemsInCart - 1);
+
+    if(itemQuan === 1) {
+      const newCart = cart.filter((item) => item.id !== id);
+      setCart(newCart);
+    }  
+    
   }
 
 
@@ -68,6 +78,28 @@ function App() {
         },
       ]);
     }
+
+    
+    
+    addTotalItemsInCart(() => {
+      if(quan) {
+        if(totalItemsInCart > 0) {
+          return totalItemsInCart + parseInt(quan);
+  
+        } else {
+          return parseInt(quan);
+        }
+
+      } else {
+        if(totalItemsInCart > 0) {
+          return totalItemsInCart + 1;
+  
+        } else {
+          return 1;
+        }
+      }
+    });
+
 	}
 
 	const [products, setProducts] = useState([
@@ -127,6 +159,7 @@ function App() {
 		const carta = document.getElementById("shoppingCart");
 		const closeCartBut = document.getElementById("closeCartBut");
 
+
 		const hideCart = () => {
 			back.classList.remove("activeBack");
 			carta.classList.remove("active");
@@ -140,7 +173,7 @@ function App() {
 
 	return (
 		<BrowserRouter>
-			<Nav></Nav>
+			<Nav cart={totalItemsInCart}></Nav>
 
 			<Routes>
 				<Route path="/" element={<Home />} />
