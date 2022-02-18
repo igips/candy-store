@@ -49,6 +49,10 @@ h1, p {
     color: #444;
 }
 
+button:focus {outline:0;}
+
+
+
 .addToCartButtonProductPage {
     height: 40px;
     border: none;
@@ -57,11 +61,19 @@ h1, p {
     color: white;
     cursor: pointer;
     width: 180px;
+    
 }
 
 .addToCartButtonProductPage:hover {
     background-color: #C90056;
 }
+
+.addToCartButtonProductPage:active {
+    background-color: #B0003D;
+}
+
+
+
 
 article {
     margin-top: 20px;

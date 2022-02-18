@@ -58,6 +58,10 @@ p {
     
 }
 
+.addToCartDiv button:active {
+    background-color: #B0003D;
+}
+
 .productCardContainer:hover {
     box-shadow: 0 4px 7px #0000002a;
 }
