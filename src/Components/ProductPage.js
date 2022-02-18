@@ -1,13 +1,13 @@
 import "../Styles/ProductPage.css";
-import {useParams} from "react-router";
-import {useState} from "react";
+import {useParams, useLocation} from "react-router";
+import {useEffect, useState} from "react";
 
 
 function ProductPage(props) {
 
-    const [loc, setLoc] = useState(useParams());
+    const {id} = useParams();
 
-    const [item, setItem] = useState(props.products.filter(item => item.id === loc.id));
+    const [item, setItem] = useState(props.products.filter(item => item.id === id));
 
     const [quan, setQuan] = useState(1);
 
@@ -20,6 +20,15 @@ function ProductPage(props) {
             setQuan(quan - 1);
         }
     }
+
+    
+    
+    useEffect(() => {
+        setItem(() => {
+           let a = props.products.filter(item => item.id === id);
+           return a;
+        })
+    },[id, props.products]);
     
 
     return (
@@ -30,7 +39,7 @@ function ProductPage(props) {
                 </div>
 
                 <div id="productPageRight">
-                    <h1 id="productPageTitle">{item[0].name.toUpperCase()}</h1>
+                    <h2 id="productPageTitle">{item[0].name.toUpperCase()}</h2>
                     <p id="productPagePrice">£{item[0].price}</p>
                     <div className="number-input">
                         <button onClick={subQuan}></button>
