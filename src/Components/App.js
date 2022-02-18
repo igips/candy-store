@@ -158,7 +158,8 @@ function App() {
 		const back = document.getElementById("divForCartBackground");
 		const carta = document.getElementById("shoppingCart");
 		const closeCartBut = document.getElementById("closeCartBut");
-
+    const imgInCart = Array.from(document.getElementsByClassName("cartImg"));
+    const spanInCart = Array.from(document.getElementsByClassName("cartSpan"));
 
 		const hideCart = () => {
 			back.classList.remove("activeBack");
@@ -167,8 +168,17 @@ function App() {
 
 		back.addEventListener("click", hideCart);
 		closeCartBut.addEventListener("click", hideCart);
-
+    imgInCart.forEach((img) => {
+      img.addEventListener("click", hideCart);
+    });
+    spanInCart.forEach((span) => {
+      span.addEventListener("click", hideCart);
+    })
+        
 		console.log(cart);
+
+    
+
 	});
 
 	return (
