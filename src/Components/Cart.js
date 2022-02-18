@@ -21,7 +21,7 @@ function Cart(props) {
                                 <span><b>{item.name}</b> </span>
                                 <span> £{(item.price * item.quan).toFixed(2)}</span>
                                 <div className="cartQuanDiv">
-                                    <button onClick={() => props.sub(item.id)}>-</button>
+                                    <button onClick={() => props.sub(item.id, item.quan)}>-</button>
                                     <input className="quantityCart" min="0" name="quantity" value={item.quan} type="number" readOnly />
                                      <button onClick={() => props.add(item.id)}  className="add">+</button>
                                 </div>
