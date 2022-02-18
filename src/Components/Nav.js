@@ -2,7 +2,9 @@ import "../Styles/Nav.css";
 import { useEffect } from "react";
 import {Link} from "react-router-dom";
 
-function Nav() {
+function Nav(props) {
+
+	
 
 	useEffect(() => {
 		const back = document.getElementById("divForCartBackground");
@@ -37,7 +39,7 @@ function Nav() {
 					<a id="cart" href="">
 						<i className="fa-solid fa-cart-shopping"></i>
 						<span className="badge badge-warning" id="lblCartCount">
-							5
+							{props.cart > 0 ? props.cart : ""}
 						</span>
 					</a>
 				</div>
