@@ -107,6 +107,10 @@
     justify-content: center;
 }
 
+.cartItemData  span b:hover {
+    color: #2B2B2B;
+}
+
 .quantityCart {
     width: 30px;
     text-align: center;
