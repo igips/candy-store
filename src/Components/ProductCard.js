@@ -5,7 +5,7 @@ function ProductCard(props) {
 
 	return (
 		<div className="productCardContainer">
-			<Link to={{pathname: `/product/${props.id}`, state: {props}}}>
+			<Link to={`/product/${props.id}`}>
 				<img className="cardImgDiv" src={props.img} alt="" />
 			</Link>
 
