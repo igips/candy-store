@@ -1,5 +1,5 @@
 import "../Styles/Cart.css";
-import {useState} from "react";
+import {Link} from "react-router-dom";
 
 
 function Cart(props) {
@@ -15,10 +15,11 @@ function Cart(props) {
                     total += item.price * item.quan;
                     return (
                         <div key={item.id + "C"} className="cartItem"> 
-                            <div className="cartImgDiv"><img className="cartImg" src={item.photo} alt="" /> </div>
-                            
+                            <div className="cartImgDiv"><Link to={`/product/${item.id}`}><img className="cartImg" src={item.photo} alt="" /></Link> </div>
+			        
                             <div className="cartItemData">
-                                <span><b>{item.name}</b> </span>
+
+                                <Link to={`/product/${item.id}`} style={{ textDecoration: 'none', color: "#444" }} > <span className="cartSpan"><b>{item.name}</b> </span></Link>
                                 <span> £{(item.price * item.quan).toFixed(2)}</span>
                                 <div className="cartQuanDiv">
                                     <button onClick={() => props.sub(item.id, item.quan)}>-</button>
