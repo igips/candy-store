@@ -1,5 +1,5 @@
 import "../Styles/ProductPage.css";
-import {useParams, useLocation} from "react-router";
+import {useParams} from "react-router";
 import {useEffect, useState} from "react";
 
 
