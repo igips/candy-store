@@ -85,7 +85,7 @@ function Store(props) {
 							<span>Candy</span>
 						</li>
 						<li className="lastInList">
-							<span>Chocolate Bars</span>
+							<span>Chocolate</span>
 						</li>
 					</ul>
 
@@ -101,6 +101,12 @@ function Store(props) {
 						</li>
 						<li>
 							<span>Reese's</span>
+						</li>
+						<li>
+							<span>Sour Patch</span>
+						</li>
+						<li>
+							<span>Skittles</span>
 						</li>
 						<li className="lastInList">
 							<span>Peace Tea</span>
