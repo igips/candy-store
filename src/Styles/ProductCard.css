@@ -28,6 +28,11 @@ p {
 
 .prodName {
     cursor: pointer;
+    height: 40px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
     
 }
 
