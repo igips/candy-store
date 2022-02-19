@@ -25,6 +25,7 @@ nav {
 #headerDiv {
     flex: 1;
     text-align: center;
+    
 }
 
 #headerDiv h1 {
@@ -35,12 +36,13 @@ nav {
 
 .navDiv {
     display: flex;
-    flex: 1;
+    /* flex: 1; */
     justify-content: flex-end;
     align-items: center;
     gap: 30px;
     font-size: 1.3em;
     color: #e2086f;
+    
 }
 
 #navDivLeft {
@@ -58,8 +60,8 @@ nav {
 }
 
 #cart {
-    width: 40px;
-    padding-left: 4px;
+    width: 45px;
+    padding-left: 9px;
 }
 
 i {
@@ -111,6 +113,11 @@ i {
 
     .navDiv {
         font-size: 1em;
+        width: 117px;
+    }
+
+    .cart {
+        width: 40px;
     }
 
     
@@ -124,8 +131,9 @@ i {
 
     .navDiv {
         font-size: 0.7em;
-        gap: 15px;
     }
+
+   
 
     
 }
@@ -134,7 +142,13 @@ i {
     
     #navContainer {
        padding-left: 15px;
-       padding-right: 15px;
+       padding-right: 5px;
+    }
+
+    #cart {
+        
+        max-width: 42px;
+        padding-left: 9px;
     }
 }
 
@@ -159,7 +173,7 @@ i {
 
     .navDiv {
         font-size: 1em;
-        gap: 15px;
+        gap: 10px;
     }
 
     
@@ -174,7 +188,6 @@ i {
 
     .navDiv {
         font-size: 0.8em;
-        gap: 15px;
     }
 
     
@@ -185,7 +198,12 @@ i {
 @media (max-width: 280px) {
     
     .navDiv {
-        gap: 10px;
+        gap: 5px;
+        width: 90px;
+    }
+
+    #navDivRight {
+        gap: 0px;
     }
 }
 
