@@ -26,7 +26,7 @@ function Nav(props) {
 		<nav>
 			<div id="navContainer">
 				<div id="navDivLeft" className="navDiv">
-					<Link to="/" >Home</Link>
+					<Link  to="/" >Home</Link>
 					<Link to="/store" >Store</Link>
 				</div>
 				<div id="headerDiv">
@@ -34,7 +34,7 @@ function Nav(props) {
 						<h1>Candy Store</h1>
 					</header>
 				</div>
-				<div className="navDiv">
+				<div className="navDiv" id="navDivRight">
 					<Link to="/contact">Contact</Link>
 					<a id="cart" href="">
 						<i className="fa-solid fa-cart-shopping"></i>
