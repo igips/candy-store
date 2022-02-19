@@ -15,6 +15,7 @@ import skittles from "../img/skittles.jpg";
 import reeses from "../img/reeses.png";
 import peace from "../img/peace.jpg";
 
+
 function App() {
 	const [cart, setCart] = useState([]);
   const [totalItemsInCart, addTotalItemsInCart] = useState();
@@ -118,7 +119,7 @@ function App() {
 			photo: sourPatch,
 			price: "1.95",
 			desc: "Give your tongue a real tangy-tingling sensation with this 3.5oz theater box of Sour Patch Kids! These delightfully fruity gummies are coated in a sour sugar that will fizz on your tongue and make your mouth-pucker, before giving way to a soft and sweet chew beneath. Each one of these delicious candies is bursting super sour, tongue tingling fruity flavours! Simply mouth-watering!",
-      brand: "Sour Patch",
+      brand: "SourPatch",
       category: "candy"
 		},
 		{
@@ -128,7 +129,7 @@ function App() {
 			price: "1.39",
 			desc: "One of America's favourite snacks, loaded with flavourful fillings and usually frosted with an icing to match. They're great straight out of the box, but even better toasted to warm and gooey perfection in a toaster or microwave oven. Each pastry consists of a delicious cherry-flavoured filling, pink frosting, and sparkly red sprinkles: it's cherry heaven!",
       brand: "kellogg's",
-      category: "pop tarts",
+      category: "poptarts",
 		},
 		{
 			id: "hersB",
@@ -138,6 +139,7 @@ function App() {
 			desc: "If you’re looking to add a little hippity-hoppity happiness to your Easter baskets this spring, look no further than HERSHEY'S Milk Chocolate Bunny.",
       brand: "hershey's",
       category: "chocolate",
+      catB: "under"
 		},
 		{
 			id: "skittles",
@@ -163,7 +165,7 @@ function App() {
 			photo: peace,
 			price: "1.69",
 			desc: "Green Tea Flavour Peace Iced Tea (often labeled Peace Tea) is a brand of iced tea beverages produced by the Coca-Cola Company. There's peace, happiness, and fresh iced tea flavor in every can of Peace Tea. Take a sip of something refreshingly delicious and enjoy Peace Tea today!- 695ml",
-      brand: "peace tea",
+      brand: "peacetea",
       category: "soda",
 		},
 	]);
@@ -201,7 +203,8 @@ function App() {
 
 			<Routes>
 				<Route path="/" element={<Home />} />
-				<Route path="/store" element={<Store products={products} addToCart={addToCart} />} />
+				<Route path="/store/" element={<Store products={products} addToCart={addToCart} />} />
+        <Route path="/store/:cat" element={<Store products={products} addToCart={addToCart} />} />
 				<Route path="/contact" element={<Contact />} />
 				<Route path="/product/:id" element={<ProductPage products={products} addToCart={addToCart} />} />
 			</Routes>
