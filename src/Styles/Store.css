@@ -9,8 +9,6 @@ ul {
 	list-style: none;
 }
 
-
-
 li span {
 	position: relative;
 	left: -15px;
@@ -102,12 +100,10 @@ input {
 }
 
 
-
-
 #storeNav.active {
 	transition: height 2s;
 	display: block;
-	height: 320px;
+	height: 360px;
 }
 
 #storeNav.active2 {
@@ -129,6 +125,14 @@ input {
 	margin-bottom: 10px;
 	border-bottom: 1px solid #936f88;
 }
+
+.storeLinks {
+    color: #936f88;
+}
+.storeLinks:hover {
+    color: #603C55;
+}
+
 
 #secondUl {
     border-bottom: none;
