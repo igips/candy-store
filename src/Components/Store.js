@@ -6,6 +6,33 @@ import fantaStraw from "../img/fantaStraw.jpg";
 
 function Store(props) {
 
+	const [sort, setSort] = useState("Alphabetically, A-Z");
+	const [products, setProducts] = useState(props.products);
+
+
+	useEffect(() => {
+			setProducts(() => {
+				let sorted;
+
+				if(sort === "Alphabetically, A-Z") {
+					sorted = [...products].sort((a, b) => a.name.localeCompare(b.name));
+					
+				} else if (sort === "Alphabetically, Z-A") {
+					sorted = [...products].sort((a, b) => b.name.localeCompare(a.name));
+					
+				} else if (sort === "Price, low to high") {
+					sorted = [...products].sort((a, b) => a.price - b.price);
+					
+				} else if (sort === "Price, high to low") {
+					sorted = [...products].sort((a, b) => b.price - a.price);
+				}
+
+				return sorted;
+			});
+
+		
+	}, [sort]);
+
 	
 	useEffect(() => {
 		function navDropFunction() {
@@ -84,8 +111,8 @@ function Store(props) {
 					<div id="productsHeader">
 						<p>Products</p>
 						<div id="selectDiv">
-							<span>Sort By:</span>
-							<select defaultValue="Price, low to high">
+							<span>Sort:</span>
+							<select value={sort} onChange={(e) => setSort(e.target.value)}>
 								<option value="Price, low to high">Price, low to high</option>
 								<option value="Price, high to low">Price, high to low</option>
 								<option value="Alphabetically, A-Z">Alphabetically, A-Z</option>
@@ -94,7 +121,7 @@ function Store(props) {
 						</div>
 					</div>
                     <div id="productList">
-						{props.products.map((item) => {
+						{products.map((item) => {
 							return (
 								<ProductCard item={item} addToCart={props.addToCart} id={item.id} key={item.id} price={item.price} name={item.name} img={item.photo}></ProductCard>
 							);
