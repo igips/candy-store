@@ -9,6 +9,7 @@ main {
 .carousel .carousel-item {
 	height: 513px;
 	cursor: pointer;
+	
 }
 
 .carousel-item img {
@@ -17,7 +18,27 @@ main {
 	top: 0;
 	left: 0;
 	min-height: 513px;
+	
 }
+
+.carousel-control-next-icon {
+	display: none;
+}
+
+.carousel-control-prev-icon {
+	display: none;
+}
+
+.carousel-indicators {
+	display: none;
+}
+
+
+a {
+	color: #e2086f;
+    text-decoration: none;
+}
+
 
 #mainContainer {
 	min-height: 100%;
@@ -75,15 +96,23 @@ main {
 	cursor: pointer;
 }
 
-#mainLeft span:hover {
-	color: #2f5077;
-}
+
 
 .imgDiv {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	gap: 5px;
+}
+
+a {
+	color: #e2086f;
+    text-decoration: none;
+}
+
+a:hover {
+	color: #C90056;
+    text-decoration: none;
 }
 
 @media (max-width: 900px) {
