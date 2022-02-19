@@ -19,8 +19,7 @@ h1, p {
 	padding-right: 50px;
 	margin-top: 30px;
     justify-content: space-between;
-    
-
+    gap: 20px;
 }
 
 #productPageLeft {
@@ -142,9 +141,15 @@ input[type="number"]::-webkit-outer-spin-button {
 	text-align: center;
 }
 
+@media (max-width: 1015px) {
+	#productPageTitle {
+        font-size: 1.5em;
+    }
+}
+
 @media (max-width: 880px) {
 	#productPageTitle {
-        font-size: 2em;
+        font-size: 1.3em;
     }
 }
 
@@ -178,4 +183,11 @@ input[type="number"]::-webkit-outer-spin-button {
 		padding-right: 15px;
     }
 }
+
+@media (max-width: 325px) {
+	#productPageTitle {
+        font-size: 1em;
+    }
+}
+
 
