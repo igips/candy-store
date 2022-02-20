@@ -19,7 +19,7 @@ function Home() {
 								<img src={smallImg1} alt="" />
 							</Link>
 							<Link className="homeLink" to={`/store/candy`}>
-								<span>Candy</span>
+								<span>CANDY</span>
 							</Link>
 						</div>
 						<div className="imgDiv">
