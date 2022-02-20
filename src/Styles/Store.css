@@ -59,13 +59,13 @@ li span {
 
 input {
     padding-left: 10px;
-    width: 124px;
+    width: 150px;
     margin-bottom: 10px;
     border: 1px solid  #e2086f;
     outline: none;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 	outline: none;
-    border-right: none;
+    
 	
 }
 

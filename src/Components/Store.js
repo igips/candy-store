@@ -124,9 +124,7 @@ function Store(props) {
 					<div id="search">
 						<div>
 							<input value={search} onChange={(e) => handleSearch(e)} id="loc-input" type="text" placeholder="Search..." />
-							<button id="search-button">
-								
-							</button>
+							
 						</div>
 						<p id="not-found"></p>
 					</div>
