@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, HashRouter, Routes, Route } from "react-router-dom";
 import Nav from "./Nav.js";
 import Home from "./Home.js";
 import Store from "./Store.js";
@@ -194,7 +194,7 @@ function App() {
 	});
 
 	return (
-		<BrowserRouter>
+		<HashRouter>
 			<Nav cart={totalItemsInCart}></Nav>
 
 			<Routes>
@@ -212,7 +212,7 @@ function App() {
 					<i className="fab fa-github"></i>
 				</a>
 			</footer>
-		</BrowserRouter>
+		</HashRouter>
 	);
 }
 
