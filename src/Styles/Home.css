@@ -50,6 +50,7 @@ a {
 	padding-left: 50px;
 	padding-right: 50px;
 	gap: 20px;
+	align-items: center;
 }
 
 @keyframes fadeIn {
@@ -62,13 +63,13 @@ a {
 }
 
 #mainLeft {
-	margin-top: 20px;
+	margin-top: 31px;
 }
 
 #mainRight {
 	flex: 1;
 	display: flex;
-	margin-top: 20px;
+	margin-top: 0px;
 	justify-items: center;
 	min-height: 400px;
 }
