@@ -133,6 +133,9 @@ i {
         font-size: 0.7em;
     }
 
+    #navDivRight {
+		gap: 15px;
+	}
    
 
     
@@ -161,6 +164,10 @@ i {
     .navDiv {
         font-size: 1em;
     }
+
+    #navDivRight {
+		gap: 10px;
+	}
 
     
 }
@@ -200,6 +207,10 @@ i {
     .navDiv {
         gap: 5px;
         width: 90px;
+    }
+
+    #navDivLeft {
+        gap: 20px;
     }
 
     #navDivRight {
