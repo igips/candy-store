@@ -33,6 +33,8 @@ h1, p {
 	display: flex;
 	flex-direction: column;
     gap: 10px;
+	min-height: 500px;
+	justify-content: center;
 }
 
 #productPageLeft img {
@@ -79,6 +81,7 @@ button:focus {outline:0;}
 article {
     margin-top: 20px;
     color: #444;
+	min-height: 100px;
 }
 
 input[type="number"] {
@@ -159,6 +162,10 @@ input[type="number"]::-webkit-outer-spin-button {
         flex-direction: column;
         gap: 30px;
     }
+
+	#productPageRight {
+		min-height: 0px;
+	}
 
     article {
         margin-top: 10px;
