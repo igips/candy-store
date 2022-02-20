@@ -4,8 +4,6 @@ import {Link} from "react-router-dom";
 
 function Nav(props) {
 
-	
-
 	useEffect(() => {
 		const back = document.getElementById("divForCartBackground");
 		const cart = document.getElementById("shoppingCart");
