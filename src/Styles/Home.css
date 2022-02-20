@@ -101,8 +101,12 @@ a {
 .imgDiv {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	/* align-items: center; */
 	gap: 5px;
+}
+
+.homeLink {
+	text-align: center;
 }
 
 a {
