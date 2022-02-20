@@ -1,12 +1,14 @@
 import { useEffect, useState } from "react";
 import "../Styles/Store.css";
 import ProductCard from "./ProductCard.js";
-import { useParams } from "react-router";
+import { useParams  } from "react-router";
 import { Link } from "react-router-dom";
 
 function Store(props) {
-	let { cat } = useParams();
-
+	let {cat} = useParams();
+	const [help, setHelp] = useState(0); 
+	
+	const [search, setSearch] = useState("");
 	const [sort, setSort] = useState("Alphabetically, A-Z");
 	const [products, setProducts] = useState(() => {
 		if (!cat) {
@@ -19,18 +21,60 @@ function Store(props) {
 		}
 	});
 
+	function handleSearch(event) {
+		setSearch(event.target.value);
+		window.history.replaceState(null, "New Page Title", `/store`);
+		
+	} 
+
+
+	function helpCat(str) {
+		if(cat === str) {
+			setHelp(help + 1);
+			setSearch("")
+		} else {
+			cat = str;
+			setSearch("")
+		}
+
+
+	}
+
+	useEffect(() => {
+
+		if(search !== "") {
+			setProducts(() => {
+				const newProducts = props.products.filter((product) => {
+					if(product.name.replace(/[^a-zA-Z ]/g, "").toLowerCase().startsWith(search.replace(/[^a-zA-Z ]/g, "").toLowerCase())) {
+						return product;
+					} else if(product.brand.replace(/[^a-zA-Z ]/g, "").toLowerCase().startsWith(search.replace(/[^a-zA-Z ]/g, "").toLowerCase())) {
+						return product;
+					}
+				});
+				return newProducts;
+			})
+
+		} else if(search === "") {
+			setProducts(() => {
+					return props.products;
+			});
+		}
+	}, [search]);
+
 	useEffect(() => {
 		setProducts(() => {
 			if (!cat) {
+				
 				return props.products;
 			} else {
 				const picked = props.products.filter(
 					(item) => item.brand === cat || item.category === cat || item.catB === cat
 				);
+				
 				return picked;
 			}
 		});
-	}, [cat]);
+	}, [cat, help]);
 
 	useEffect(() => {
 		function navDropFunction() {
@@ -47,7 +91,8 @@ function Store(props) {
 		}
 
 		document.getElementById("navButton").addEventListener("click", navDropFunction);
-	}, []);
+		
+	}, [cat]);
 
 	useEffect(() => {
 		setProducts(() => {
@@ -65,7 +110,6 @@ function Store(props) {
 
 			return sorted;
 		});
-		console.log(cat);
 	}, [sort]);
 
 	const height = {
@@ -79,9 +123,9 @@ function Store(props) {
 				<div id="storeNav">
 					<div id="search">
 						<div>
-							<input id="loc-input" type="text" placeholder="Search..." />
+							<input value={search} onChange={(e) => handleSearch(e)} id="loc-input" type="text" placeholder="Search..." />
 							<button id="search-button">
-								<i className="fas fa-search" style={height}></i>
+								
 							</button>
 						</div>
 						<p id="not-found"></p>
@@ -90,23 +134,23 @@ function Store(props) {
 						<b>Category</b>
 					</p>
 					<ul className="catList">
-						<li>
-							<Link className="storeLinks" to={`/store/soda`}>
+						<li >
+							<Link onClick={() => helpCat("soda")}  className="storeLinks" to={`/store/soda`}>
 								<span>Soda</span>
 							</Link>
 						</li>
 						<li>
-							<Link className="storeLinks" to={`/store/poptarts`}>
+							<Link onClick={() => helpCat("poptarts")} className="storeLinks" to={`/store/poptarts`}>
 								<span>Pop Tarts</span>
 							</Link>
 						</li>
 						<li>
-							<Link className="storeLinks" to={`/store/candy`}>
+							<Link onClick={() => helpCat("candy")} className="storeLinks" to={`/store/candy`}>
 								<span>Candy</span>
 							</Link>
 						</li>
 						<li className="lastInList">
-							<Link className="storeLinks" to={`/store/chocolate`}>
+							<Link onClick={() => helpCat("chocolate")} className="storeLinks" to={`/store/chocolate`}>
 								<span>Chocolate</span>
 							</Link>
 						</li>
@@ -117,38 +161,38 @@ function Store(props) {
 					</p>
 					<ul id="secondUl" className="catList">
 						<li>
-							<Link className="storeLinks" to={`/store/fanta`}>
+							<Link onClick={() => helpCat("fanta")}  className="storeLinks" to={`/store/fanta`}>
 								<span>Fanta</span>
 							</Link>
 						</li>
 						<li>
-							<Link className="storeLinks" to={`/store/hershey's`}>
+							<Link onClick={() => helpCat("hershey's")} className="storeLinks" to={`/store/hershey's`}>
 								<span>Hershey's</span>
 							</Link>
 						</li>
 						<li>
-							<Link className="storeLinks" to={`/store/reese's`}>
+							<Link onClick={() => helpCat("reese's")} className="storeLinks" to={`/store/reese's`}>
 								<span>Reese's</span>
 							</Link>
 						</li>
 						<li>
-							<Link className="storeLinks" to={`/store/skittles`}>
+							<Link onClick={() => helpCat("skittles")} className="storeLinks" to={`/store/skittles`}>
 								<span>Skittles</span>
 							</Link>
 						</li>
 
 						<li>
-							<Link className="storeLinks" to={`/store/kellogg's`}>
+							<Link onClick={() => helpCat("kellogg's")} className="storeLinks" to={`/store/kellogg's`}>
 								<span>Kellogg's</span>
 							</Link>
 						</li>
 						<li>
-							<Link className="storeLinks" to={`/store/SourPatch`}>
+							<Link onClick={() => helpCat("SourPatch")} className="storeLinks" to={`/store/SourPatch`}>
 								<span>Sour Patch</span>
 							</Link>
 						</li>
 						<li className="lastInList">
-							<Link className="storeLinks" to={`/store/peacetea`}>
+							<Link onClick={() => helpCat("peacetea")} className="storeLinks" to={`/store/peacetea`}>
 								<span>Peace Tea</span>
 							</Link>
 						</li>
@@ -189,3 +233,7 @@ function Store(props) {
 }
 
 export default Store;
+
+//<button id="search-button">
+								//<i className="fas fa-search" style={height}></i>
+						//	</button>
