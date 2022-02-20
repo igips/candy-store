@@ -79,14 +79,14 @@ function Store(props) {
 	useEffect(() => {
 		function navDropFunction() {
 			if (!document.getElementById("storeNav").classList.contains("active")) {
-				if (document.getElementById("storeNav").classList.contains("active2")) {
-					document.getElementById("storeNav").classList.remove("active2");
+				if (document.getElementById("storeNav").classList.contains("active3")) {
+					document.getElementById("storeNav").classList.remove("active3");
 				}
 
 				document.getElementById("storeNav").classList.add("active");
 			} else if (document.getElementById("storeNav").classList.contains("active")) {
 				document.getElementById("storeNav").classList.remove("active");
-				document.getElementById("storeNav").classList.add("active2");
+				document.getElementById("storeNav").classList.add("active3");
 			}
 		}
 
