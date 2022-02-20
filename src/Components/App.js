@@ -190,11 +190,7 @@ function App() {
     spanInCart.forEach((span) => {
       span.addEventListener("click", hideCart);
     })
-        
-		console.log(cart);
-
-    
-
+          
 	});
 
 	return (
