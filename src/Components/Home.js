@@ -18,7 +18,7 @@ function Home() {
 							<Link to={`/store/candy`}>
 								<img src={smallImg1} alt="" />
 							</Link>
-							<Link to={`/store/candy`}>
+							<Link className="homeLink" to={`/store/candy`}>
 								<span>Candy</span>
 							</Link>
 						</div>
@@ -26,7 +26,7 @@ function Home() {
 							<Link to={`/store/poptarts`}>
 								<img src={smallImg2} alt="" />
 							</Link>
-							<Link to={`/store/poptarts`}>
+							<Link className="homeLink" to={`/store/poptarts`}>
 								<span>POP TARTS</span>
 							</Link>
 						</div>
@@ -34,7 +34,7 @@ function Home() {
 							<Link to={`/store/fanta`}>
 								<img src={smallImg4} alt="" />
 							</Link>
-							<Link to={`/store/fanta`}>
+							<Link className="homeLink"  to={`/store/fanta`}>
 								<span>FANTA</span>
 							</Link>
 						</div>
@@ -42,7 +42,7 @@ function Home() {
 							<Link to={`/store/under`}>
 								<img src={smallImg3} alt="" />
 							</Link>
-							<Link to={`/store/under`}>
+							<Link className="homeLink" to={`/store/under`}>
 								<span>UNDER £1!</span>
 							</Link>
 						</div>
