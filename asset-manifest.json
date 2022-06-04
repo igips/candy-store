@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/shopping-cart/static/css/main.1463a429.css",
-    "main.js": "/shopping-cart/static/js/main.849f611a.js",
-    "static/media/back3.jpg": "/shopping-cart/static/media/back3.2a8907ee5745be2e90b7.jpg",
-    "static/media/back4.jpg": "/shopping-cart/static/media/back4.c6e031ca20358ebfe6b8.jpg",
-    "static/media/peace.jpg": "/shopping-cart/static/media/peace.a5484eb401a21d7e4a76.jpg",
-    "static/media/sourPatch.png": "/shopping-cart/static/media/sourPatch.c20fc43e77fc70a3c44a.png",
-    "static/media/reeses.png": "/shopping-cart/static/media/reeses.7ee5dfc62102597dc34c.png",
-    "static/media/smallImg4.jpg": "/shopping-cart/static/media/smallImg4.ed1865bf88e6cac77f78.jpg",
-    "static/media/back2.jpg": "/shopping-cart/static/media/back2.67680b0f6de2dbbd036e.jpg",
-    "static/media/back.jpg": "/shopping-cart/static/media/back.fcc1a80ee9563bde46d0.jpg",
-    "static/media/smallImg3.jpg": "/shopping-cart/static/media/smallImg3.749347fb72d22e0649e6.jpg",
-    "static/media/smallImg2.jpg": "/shopping-cart/static/media/smallImg2.e0eb52021cb2b95e6ca7.jpg",
-    "static/media/popTarts.jpg": "/shopping-cart/static/media/popTarts.2510bb1675381483a68f.jpg",
-    "static/media/smallImg.jpg": "/shopping-cart/static/media/smallImg.dc5bbd1ccec62d469efb.jpg",
-    "static/media/hersB.jpg": "/shopping-cart/static/media/hersB.83684c27a05ecc11b5ce.jpg",
-    "static/media/skittles.jpg": "/shopping-cart/static/media/skittles.ab19fb183199f1f96a02.jpg",
-    "static/media/fantaStraw.jpg": "/shopping-cart/static/media/fantaStraw.b46560b60cff48a184f6.jpg",
-    "index.html": "/shopping-cart/index.html",
-    "main.1463a429.css.map": "/shopping-cart/static/css/main.1463a429.css.map",
-    "main.849f611a.js.map": "/shopping-cart/static/js/main.849f611a.js.map"
+    "main.css": "/candy-store/static/css/main.1463a429.css",
+    "main.js": "/candy-store/static/js/main.4c247fc6.js",
+    "static/media/back3.jpg": "/candy-store/static/media/back3.2a8907ee5745be2e90b7.jpg",
+    "static/media/back4.jpg": "/candy-store/static/media/back4.c6e031ca20358ebfe6b8.jpg",
+    "static/media/peace.jpg": "/candy-store/static/media/peace.a5484eb401a21d7e4a76.jpg",
+    "static/media/sourPatch.png": "/candy-store/static/media/sourPatch.c20fc43e77fc70a3c44a.png",
+    "static/media/reeses.png": "/candy-store/static/media/reeses.7ee5dfc62102597dc34c.png",
+    "static/media/smallImg4.jpg": "/candy-store/static/media/smallImg4.ed1865bf88e6cac77f78.jpg",
+    "static/media/back2.jpg": "/candy-store/static/media/back2.67680b0f6de2dbbd036e.jpg",
+    "static/media/back.jpg": "/candy-store/static/media/back.fcc1a80ee9563bde46d0.jpg",
+    "static/media/smallImg3.jpg": "/candy-store/static/media/smallImg3.749347fb72d22e0649e6.jpg",
+    "static/media/smallImg2.jpg": "/candy-store/static/media/smallImg2.e0eb52021cb2b95e6ca7.jpg",
+    "static/media/popTarts.jpg": "/candy-store/static/media/popTarts.2510bb1675381483a68f.jpg",
+    "static/media/smallImg.jpg": "/candy-store/static/media/smallImg.dc5bbd1ccec62d469efb.jpg",
+    "static/media/hersB.jpg": "/candy-store/static/media/hersB.83684c27a05ecc11b5ce.jpg",
+    "static/media/skittles.jpg": "/candy-store/static/media/skittles.ab19fb183199f1f96a02.jpg",
+    "static/media/fantaStraw.jpg": "/candy-store/static/media/fantaStraw.b46560b60cff48a184f6.jpg",
+    "index.html": "/candy-store/index.html",
+    "main.1463a429.css.map": "/candy-store/static/css/main.1463a429.css.map",
+    "main.4c247fc6.js.map": "/candy-store/static/js/main.4c247fc6.js.map"
   },
   "entrypoints": [
     "static/css/main.1463a429.css",
-    "static/js/main.849f611a.js"
+    "static/js/main.4c247fc6.js"
   ]
 }
