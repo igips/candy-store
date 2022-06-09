@@ -7,7 +7,7 @@ Simple e-commerce app made with React
 ## Features
 * Responsive design
 * Clean user interface with smooth animations
-* Working search engine
+* Working search bar
 * Add and remove products from the shopping cart
 * Filter products by categories or brands
 * Sort products alphabetically or by price
