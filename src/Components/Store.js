@@ -231,7 +231,3 @@ function Store(props) {
 }
 
 export default Store;
-
-//<button id="search-button">
-								//<i className="fas fa-search" style={height}></i>
-						//	</button>
